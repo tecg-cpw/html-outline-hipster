@@ -19,9 +19,10 @@ Créez le fichier `index.html` avec les bonnes balises afin d’arriver au résu
 
 Vous trouverez le contenu textuel dans le fichier `contenu.txt`.
 
-Veillez à obtenir un outline (ou plan du document) compatible en **HTML5** et en **HTML4**.
+Veillez à obtenir un outline (ou plan du document) compatible en **HTML5** et en **HTML 4**.
 
-Aidez-vous du fichier `rendu-outline.png` pour réaliser cet exercice.
-![Résultat attendu](./assets-starter/rendu-outline.png)
+![Résultat attendu en HTML 4](./assets-starter/hipster-outline-html4.png)
+
+![Résultat attendu en HTML5](./assets-starter/hipster-outline-html5.png)
 
 N'oubliez pas de lier la feuille de styles qui se trouve dans le dossier `css`.
