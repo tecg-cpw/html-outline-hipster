@@ -36,3 +36,5 @@ Lunettes carrées "Wayfarer", chemise à carreaux, jean slim, pédalant pieds nu
 Il est temps que ça change. Alors je me lance: je suis un hipster et je n’en ai pas honte. Ce dilemme identitaire primordial est né du modèle ô combien agressif et péremptoire des réseaux sociaux, qui nous poussent à jouer chaque jour notre partition dans le concert mondial, soit en parfaite harmonie avec nos pairs, soit en offrant un contrepoint. Et ce nombrilisme sans cesse renouvelé ne s’exprime sans doute pas mieux que dans notre tentative régulière de définition de la hipsteritude.
 
 We are Legion. We do not forgive. We do not forget. Expect us
+
+Page réalisée par l’équipe TECG-CPW dans le cadre du cours de HTML du Bachelier en Techniques Graphiques de la HEPL
