@@ -1,6 +1,188 @@
-* {
-    margin: 0;
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+main {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+img {
+    border-style: none
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
     padding: 0;
+    white-space: normal
+}
+
+progress {
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+/* My Styles */
+
+
+html {
+    background-color: #fff;
 }
 
 body {
@@ -14,95 +196,21 @@ body {
     margin-top: 2em;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-
+/* Couleur des titres par défaut */
 h1,
 h2,
 h3,
 h4,
 h5 {
     font-family: 'Bree Serif', serif;
-}
-
-h1 a {
-    display: block;
-    width: 100%;
-    height: 223px;
-    background: url("../img/logo.png") no-repeat center;
-    text-indent: -2000px;
-    margin: 0 auto;
-}
-
-header nav h2 {
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    /* 1 */
-    -webkit-clip-path: inset(50%) !important;
-    clip-path: inset(50%) !important;
-    /* 2 */
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
-    white-space: nowrap !important;
-    /* 3 */
-}
-
-header nav ul {
-    padding: 1rem 2rem;
-    list-style-type: none;
-    background-color: #25ABE5;
-    display: flex;
-    justify-content: space-between;
-}
-
-header nav ul a {
-    font-family: 'Bree Serif', serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    letter-spacing: 0.1rem;
-}
-
-div.register {
-    background: url("../img/promobox.jpg");
-    height: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-div.register a {
-    display: block;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    box-shadow: 0 0 .2rem rgba(0, 0, 0, .4);
-    background: white;
     color: #014B6B;
-    font-family: 'Bree Serif', serif;
-    text-decoration: none;
-    text-align: center;
-    font-size: 2em;
+    /* Et aussi un petit reset des boites */
+    margin: 0;
+    padding: 0;
 }
 
-div.articles {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-}
-
-aside {
-    background-color: #014B6B;
-    padding: 1rem;
-    color: white;
-    margin-top: 10px;
-}
-
+/* Les titres que l’on veut masquer */
+header nav h2,
 aside h2 {
     border: 0 !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
@@ -120,25 +228,143 @@ aside h2 {
     /* 3 */
 }
 
+/* Les titres des deux parties du aside sont en inversion vidéo */
 aside h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+
+
+header nav ul {
+    margin: 0;
+    padding: 1rem 2rem;
+    list-style-type: none;
+    background-color: #25ABE5;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul a {
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1rem;
+}
+
+header nav ul a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+h1 a {
+    display: block;
+    width: 100%;
+    height: 223px;
+    background: url("../img/logo.png") no-repeat center;
+    text-indent: -2000px;
+    margin: 0 auto;
+}
+
+div.register {
+    background: url("../img/promobox.jpg");
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.register a {
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, .4);
+    background: #014B6B;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+}
+
+div.register a:hover {
+    background: white;
+    color: #014B6B;
+}
+
+div.articles {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+aside {
+    background-color: #014B6B;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+section.principale {
+    padding-top: 1rem;
+}
+
+section.principale h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
 aside ul {
     list-style-type: none;
+    padding: 0;
 }
 
 aside p {
-    font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 aside ul li a {
-    font-size: 14px;
     color: white;
 }
 
 aside nav {
     margin-bottom: 1rem;
+}
+
+div.articles {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+div.articles h3 {
+    margin-bottom: 0.5rem;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #014B6B;
+    color: white;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+footer a {
+    color: white;
 }
